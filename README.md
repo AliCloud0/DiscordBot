@@ -1,60 +1,96 @@
 # DiscordBot
 ⚡ Discord Bot – Fast, Modular, and Ready to Go  A lightweight, customizable Discord bot with multi-language support, secure architecture, and real-time features. Perfect for modern communities and devs who want full control.
 
-🚀 Getting Started
-Welcome to UltraBot – a modular, lightning-fast Discord bot built for serious servers and creative developers.
+## 🚀 Features
 
-🔧 Installation
+- Slash commands with auto-detection and pagination help menu  
+- Automod with toggle system per server (anti-link, anti-spam, anti-mention, etc.) 
+- Moderation tools: Warn, Kick, Ban, TempBan, Mute, Unmute  
+- Logging system for actions like message delete/edit  
+- Web dashboard integration *(coming soon)*  
+- Discord OAuth for authentication *(in progress)*  
+
+---
+
+## 🛠 Setup
+
+### Prerequisites
+
+- Node.js v18 or higher  
+- MongoDB URI (local or cloud)  
+- Discord Bot Token  
+- Firebase setup *(optional)*  
+
+### Installation
+
+```bash
+git clone https://github.com/AliCloud0/DiscordBot
+cd DiscordBot-main
 npm install
 npm install discord.js dotenv express
 
-Create a .env file in the root directory and add your credentials:
+Environment Setup
+Create a .env file in the root directory:
 
-env
-DISCORD_TOKEN=your_bot_token
-CLIENT_ID=Your Client_Id
-GUILD_ID=Your Guild_Id
+.env
+TOKEN=your_discord_token
+CLIENT_ID=your_bot_client_id
+GUILD_ID=your_guild_id
 
-Start the bot:
-npm start
+Running the Bot
+node deploy-commands.js
+node index.js
 
-🌐 Invite the Bot
-Go to Discord Developer Portal
+To deploy slash commands globally or per guild:
+node deploy.js
 
-Select your bot → OAuth2 → URL Generator
+🧩 Commands
+All commands are organized in the /commands folder and auto-loaded by category. Use /help to view all.
 
-Choose scopes: bot, applications.commands
+Admin
 
-Set permissions (e.g. Send Messages, Manage Roles, etc.)
+Info
 
-Copy the generated link and invite the bot to your server
+Moderation
 
-⚙️ Configuration
-Customize your bot via config.js or environment variables:
+General
 
-PREFIX: Command prefix (default: !)
+Owner
 
-LANGUAGE: Default language (e.g. en, fa)
+📌 TODO List
+🔧 Core Features
+slash commands by category
 
-LOG_LEVEL: debug, info, warn, error
+Help command with pagination and buttons
 
-🧩 Features
-Modular command system
+Logging system for moderation actions
 
-Multi-language support
+Toggle-based automod (on/off per rule)
 
-Real-time interactions
+Rate-limited buttons on help command
 
-Custom themes & branding
+🌐 Web Dashboard
+Discord OAuth2 login
 
-Secure, scalable architecture
+Guild selector
 
-🛠 Requirements
-Node.js v18+
+Toggle Automod settings from UI
 
-Discord Bot Token
+View mod logs and history
 
-Basic knowledge of Discord API
+🧪 Future Ideas
 
-💬 Need Help?
-Open an issue or start a discussion in the repo. Contributions, feedback, and feature requests are always welcome.
+Dashboard theming (Dark mode)
+
+Analytics dashboard (e.g. number of mutes/bans per day)
+
+
+Bot support server
+
+👤 Author
+Khanmanan
+GitHub: @AliCloud1
+Bot Repo: Discord Bot
+
+📜 License
+  © 2025 AliCloud
