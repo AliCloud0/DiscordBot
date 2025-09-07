@@ -1,0 +1,9 @@
+{
+    "prefix": "/",
+    "embedColor": "#7B3FBF",
+    "adminRole": "your adminRole",
+	"reportLogChannelId": "reportLogChannelId",
+    "warnLogChannelId": "your warnLogChannelId",
+    "maxWarnings": 3
+
+}
