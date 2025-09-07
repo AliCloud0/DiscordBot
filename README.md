@@ -88,7 +88,7 @@ Analytics dashboard (e.g. number of mutes/bans per day)
 Bot support server
 
 👤 Author
-Khanmanan
+AliCloud
 GitHub: @AliCloud1
 Bot Repo: Discord Bot
 
